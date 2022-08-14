@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Игра быки-коровы</h1>
+
+{% if new_game %}
+{{new_game}}
+ {% endif%}
+<h3>Введите четырехзначное число с неповторяющимися цифрами</h3>
+<div>
+<p> <form action="" method = 'post'>
+    {% csrf_token %}
+    <input type="text" name="name">
+    <button type="submit"> Отправить число </button>
+
+</form>
+
+
+</p>
+<p>
+{% if warning %}
+{{warning}}
+{% endif%}
+<p> {% if list_of_tries %}
+    <ul>
+    {% for l in list_of_tries %}
+        <li>{{l}}</li>
+    {% endfor%}
+
+    </ul>
+    {% endif%}</p>
+<p>
+    {% if answer %}
+    {{answer}}
+    {% endif%}</p>
+
+
+<form action="" method = 'post'>
+    {% csrf_token %}
+
+    <button type="submit" name="value" value="give up"> Сдаться </button>
+
+</form>
+    </div>
+</body>
+</html>
