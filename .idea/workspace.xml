@@ -4,19 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b12e08ac-d980-4a17-814b-bdd4cb60fdd7" name="Changes" comment="Created gane logic in utils.py, bullscows view for game handling and templates index and bullscows">
-      <change afterPath="$PROJECT_DIR$/bullscows/templates/game/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bullscows/templates/users/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bullscows/templates/users/registration.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bullscows/users/urls.py" afterDir="false" />
+    <list default="true" id="b12e08ac-d980-4a17-814b-bdd4cb60fdd7" name="Changes" comment="Added option 'new game' to bullscows view and html. Changed templates location">
+      <change afterPath="$PROJECT_DIR$/bullscows/req.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/users/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/users/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/users/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/users/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/users/templates/users/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/users/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/users/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bullscows/bullscows/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/bullscows/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bullscows/bullscows/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/bullscows/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bullscows/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bullscows/game/templates/game/bullscows.html" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/templates/game/bullscows.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bullscows/game/templates/game/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bullscows/game/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/game/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bullscows/game/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/game/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullscows/templates/game/bullscows.html" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/game/templates/game/bullscows.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullscows/templates/game/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/game/templates/game/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullscows/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/users/templates/users/logout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullscows/templates/users/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/users/templates/users/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullscows/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/users/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -50,11 +56,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\python\django\bullscows\bullscows\game\templates\game" />
+      <recent name="E:\python\django\bullscows\bullscows\users\templates\users" />
       <recent name="E:\python\django\bullscows\bullscows" />
       <recent name="E:\python\django\bullscows\bullscows\bullscows" />
       <recent name="E:\python\django\bullscows\bullscows\bullscows\templates\users" />
-      <recent name="E:\python\django\bullscows\bullscows\bullscows\templates\game" />
-      <recent name="E:\python\django\bullscows\bullscows\bullscows\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Python.utils">
@@ -129,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660493496338</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added option 'new game' to bullscows view and html. Changed templates location">
+      <created>1660915171860</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660915171860</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,7 +165,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="Created gane logic in utils.py, bullscows view for game handling and templates index and bullscows" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created gane logic in utils.py, bullscows view for game handling and templates index and bullscows" />
+    <MESSAGE value="Added option 'new game' to bullscows view and html. Changed templates location" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added option 'new game' to bullscows view and html. Changed templates location" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

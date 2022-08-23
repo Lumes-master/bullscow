@@ -1,6 +1,6 @@
 from django.contrib.auth.forms import UserCreationForm
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.generic import CreateView
 
 from .models import Bullscows
@@ -17,6 +17,8 @@ def index(request):
 
 def bullscows(request):
     player = request.user
+    if not player.is_authenticated:
+        return redirect('/users/login_user/')
     print(player)
 
     """creating a new gamepage  for user"""
