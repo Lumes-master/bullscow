@@ -1,12 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-{{name}}
+{% extends 'game/base.html' %}
 
+{% block content%}
+
+<h1> Войдите или <a href="{% url 'users:registration' %}">Зарегистрируйтесь</a>, чтобы начать. </h1>
+<h3>Регистрация займет всего 30 секунд, от вас не требуется почта или телефон, только придумать 8-значные логин и пароль</h3>
 
 <form action="#" method = 'post'>
     {% csrf_token %}
@@ -26,5 +23,4 @@
 
     {% endif %}
 </div>
-</body>
-</html>
+{% endblock %}

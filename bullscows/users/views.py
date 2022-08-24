@@ -30,8 +30,9 @@ class Register(View):
         return render(request, self.template_name, context)
 
 def logout_user(request):
-    name = "Logout"
-    return render(request, 'users/logout.html', {"name":name})
+    user = request.user
+    logout(request)
+    return redirect('/')
 
 def login_user(request):
     if request.method == 'POST':

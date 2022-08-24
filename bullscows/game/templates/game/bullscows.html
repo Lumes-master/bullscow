@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<div>
-    <a href="{% url 'game:home' %}">Домой</a>
-</div>
+{% extends 'game/base.html' %}
+
+{% block content%}
+
 <h1> Игра быки-коровы</h1>
 
 {% if new_game %}
@@ -31,7 +25,7 @@
 <p> {% if list_of_tries %}
     <ul>
     {% for l in list_of_tries %}
-        <li>{{l}}</li>
+        <li>   {{l}}    </li>
     {% endfor%}
 
     </ul>
@@ -55,5 +49,4 @@
 
 </form>
     </div>
-</body>
-</html>
+{% endblock %}

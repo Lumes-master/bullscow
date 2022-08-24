@@ -5,9 +5,10 @@ app_name = 'users'
 
 urlpatterns = [
     path('login_user/', login_user, name='login'),
-    path('registration/', Register.as_view(), name = 'registration')
+    path('registration/', Register.as_view(), name = 'registration'),
+    path('logout/', logout_user, name = 'logout'),
     # path('login/', login, name = 'login'),
-    # path('logout/', logout, name = 'logout'),
+
     # path('users/', users, name = 'users'),
 
 ]
