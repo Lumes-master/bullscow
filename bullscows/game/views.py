@@ -11,32 +11,32 @@ from django.contrib.auth.models import User
 # Create your views here.
 
 def index(request):
-    a = request.GET.get('name')
-    return render(request, 'game/index.html', {'a': a})
+
+    return render(request, 'game/index.html')
 
 
 def bullscows(request):
     player = request.user
     if not player.is_authenticated:
         return redirect('/users/login_user/')
-    print(player)
 
-    """creating a new gamepage  for user"""
+
+    """creating a new gamepage with unique game instance  for user, including answer number"""
     if player.game.count() == 0:
-        print('1')
+
         answer = create_answer()
 
         game = Bullscows.objects.create(answer=answer, user=player)
         game.save()
         new_game = 'Новая игра'
         return render(request, 'game/bullscows.html', context={'new_game': new_game})
-
+    """creating a new gamepage with unique game instance  for user, including answer number"""
     game = player.game.all()[0]
     data = {}
 
     print(game.answer)
     if request.method == 'POST':
-        print("post")
+
         """part for give-up player's decision"""
         if request.POST.get('value') == 'give up':
             print('3')
@@ -44,8 +44,10 @@ def bullscows(request):
             list_of_tries = game.try_string.split(',')
             game.delete()
             return render(request, 'game/bullscows.html', context={'answer': answer, 'list_of_tries': list_of_tries})
+
+
         elif request.POST.get('new game') == 'new game':
-            print('new game')
+
             new_game = 'Новая игра'
             game.delete()
             answer = create_answer()
@@ -53,6 +55,7 @@ def bullscows(request):
             game = Bullscows.objects.create(answer=answer, user=player)
             game.save()
             return render(request, 'game/bullscows.html', context={'new_game': new_game})
+
         else:
             player_try = request.POST.get('name')
             if not verify_try(player_try):

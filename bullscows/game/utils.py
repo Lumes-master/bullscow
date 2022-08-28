@@ -1,11 +1,12 @@
+"""Functions for game logic """
 from random import sample
 
-def create_answer():
+def create_answer() -> str:
     number_list = ('1', '2', '3', '4', '5', '6', '7', '8', '9')
     answer = ''.join(sample(number_list, 4))
     return answer
 
-def verify_try(player_try):
+def verify_try(player_try: str) -> bool:
     if len(player_try) == 4 and len(set(player_try)) == 4:
         for i in player_try:
             if i not in ('1', '2', '3', '4', '5', '6', '7', '8', '9'):
@@ -13,7 +14,7 @@ def verify_try(player_try):
         return True
     return False
 
-def check_try(answer, player_try):
+def check_try(answer: str, player_try: str) ->tuple:
     bulls=0
     cows = 0
     for i in range(len(player_try)):
@@ -24,7 +25,7 @@ def check_try(answer, player_try):
             cows+=1
     return str(cows), str(bulls)
 
-def get_try_string(answer, player_try, try_string=None):
+def get_try_string(answer: str, player_try: str, try_string: str=None) -> str:
     tuple_cowsbulls = check_try(answer, player_try)
     if not try_string:
         try_string = f'{player_try}  {tuple_cowsbulls[0]}:{tuple_cowsbulls[1]}'
