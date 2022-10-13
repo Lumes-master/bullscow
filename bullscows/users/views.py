@@ -30,7 +30,6 @@ class Register(View):
         return render(request, self.template_name, context)
 
 def logout_user(request):
-    user = request.user
     logout(request)
     return redirect('/')
 

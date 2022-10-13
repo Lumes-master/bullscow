@@ -11,7 +11,7 @@
 <div>
 <p> <form action="" method = 'post'>
     {% csrf_token %}
-    <input type="text" name="name">
+    <input type="text" name="value">
     <button type="submit"> Отправить число </button>
 
 </form>
@@ -45,8 +45,17 @@
     <form action="" method = 'post'>
     {% csrf_token %}
 
-    <button type="submit" name="new game" value="new game"> Новая игра </button>
+    <button type="submit" name="value" value="new game"> Новая игра </button>
 
 </form>
     </div>
+
+<div >
+<h3><p> Правила игры:</p>
+<p style="width:1000px;">
+Вычислите, какое число загадал компьютер. После каждой попытки вы увидите две цифры: первое - сколько цифр в загаданном числе вы угадали,
+второе - сколько из них при этом находятся на своем месте.</p>
+   <p> 1:0 означает, что вы угадали только 1 цифру, но она стоит не на своем месте.
+Ответ 4:4 означает, что вы угадали число.</p> </h3>
+</div>
 {% endblock %}
