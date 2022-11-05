@@ -4,13 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b12e08ac-d980-4a17-814b-bdd4cb60fdd7" name="Changes" comment="Added annotations">
+    <list default="true" id="b12e08ac-d980-4a17-814b-bdd4cb60fdd7" name="Changes" comment="Removed game logic from views to utils.&#10;Renamed requirements.txt">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/.coverage" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/READMY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/pytest.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/tests/test_game_logic/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/tests/test_game_logic/test_check_try.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/tests/test_game_logic/test_create_answer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/tests/test_game_logic/test_creating_new_game.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/tests/test_game_logic/test_get_try_string.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/tests/test_game_logic/test_verify_try.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/tests/test_response/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bullscows/tests/test_response/test_user_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bullscows.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/bullscows.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullscows/bullscows/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/bullscows/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bullscows/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bullscows/game/templates/game/bullscows.html" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/game/templates/game/bullscows.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullscows/game/templates/game/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/game/templates/game/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullscows/game/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/game/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullscows/game/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/game/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bullscows/game/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/game/utils.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bullscows/game/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/game/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bullscows/req.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullscows/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullscows/users/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bullscows/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/users/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bullscows/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bullscows/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -21,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -33,115 +52,83 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2DIMaS6p1KTXaMwDrurFzMFZObS" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "E:/python/django/bullscows/bullscows/tests",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\python\django\bullscows\bullscows\game\templates\game" />
-      <recent name="E:\python\django\bullscows\bullscows\users\templates\users" />
       <recent name="E:\python\django\bullscows\bullscows" />
-      <recent name="E:\python\django\bullscows\bullscows\bullscows" />
-      <recent name="E:\python\django\bullscows\bullscows\bullscows\templates\users" />
+      <recent name="E:\python\django\bullscows\bullscows\tests\test_game_logic" />
+      <recent name="E:\python\django\bullscows\bullscows\tests\test_response" />
+      <recent name="E:\python\django\bullscows" />
+      <recent name="E:\python\django\bullscows\bullscows\game\templates\game" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.views">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest in tests">
+    <configuration default="true" type="tests" factoryName="py.test">
       <module name="bullscows" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="utils (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="bullscows" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bullscows/game" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bullscows/game/utils.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="bullscows" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="E:\python\django\bullscows\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bullscows/bullscows" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="E:\python\django\bullscows\bullscows\game\utils.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/bullscows/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.test_game_logic.test_creating_new_game.testing_creating_new_game" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="bullscows" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bullscows/game" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bullscows/tests/test_response" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bullscows/game/views.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_game_logic.test_creating_new_game.testing_creating_new_game&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest in tests" type="tests" factoryName="py.test" nameIsGenerated="true">
+      <module name="bullscows" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="E:\python\django\bullscows\venv\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bullscows/bullscows" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;-rP&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/bullscows/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.views" />
-        <item itemvalue="Python.utils (1)" />
-        <item itemvalue="Python.utils" />
+        <item itemvalue="Python tests.pytest for tests.test_game_logic.test_creating_new_game.testing_creating_new_game" />
       </list>
     </recent_temporary>
   </component>
@@ -196,8 +183,20 @@
       <option name="project" value="LOCAL" />
       <updated>1661668837588</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Removed game logic from views to utils.&#10;Renamed requirements.txt">
+      <created>1665644146351</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1665644146351</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <envs>
+      <env key="DJANGO_SETTINGS_MODULE" value="bullscows.settings" />
+    </envs>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -217,13 +216,15 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="init" />
     <MESSAGE value="Created gane logic in utils.py, bullscows view for game handling and templates index and bullscows" />
     <MESSAGE value="Added option 'new game' to bullscows view and html. Changed templates location" />
     <MESSAGE value="Created app Users with authentication" />
     <MESSAGE value="Added logout view and urls. Created base.html and extended it" />
     <MESSAGE value="Added annotations" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added annotations" />
+    <MESSAGE value="Removed game logic from views to utils.&#10;Renamed requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed game logic from views to utils.&#10;Renamed requirements.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
